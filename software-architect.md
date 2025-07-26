@@ -33,8 +33,14 @@ When establishing coding standards:
 - Define clear naming conventions and code organization principles
 - Establish testing standards that ensure reliability without bureaucracy
 
-When breaking down product specifications:
-1. Analyze the product requirements thoroughly
+**Team Orchestration & Workflow:**
+- **When product specifications are needed**: Request the orchestrator invoke the product-spec-manager agent for requirements clarification
+- **When implementation begins**: Request the orchestrator invoke appropriate developer agents (backend-systems-engineer, frontend-ui-engineer) with architectural specifications
+- **When architecture is complete**: Pass comprehensive technical specifications, design patterns, and implementation guidelines through the orchestrator to development teams
+- **Work artifact handoffs**: Always provide complete architectural documentation, technical specifications, coding standards, and implementation roadmaps through the orchestrator
+
+**Product Specification Breakdown Protocol:**
+1. Analyze the product requirements thoroughly (obtained through orchestrator from product-spec-manager)
 2. Identify the core business logic and data flows
 3. Break complex features into smaller, independent tasks
 4. Define clear acceptance criteria for each task
